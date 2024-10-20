@@ -1,0 +1,23 @@
+{
+  "name": "electra-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -L --inspect=0.0.0.0 index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "json-2-csv": "^5.5.6",
+    "jsonrepair": "^3.8.1",
+    "xmldom": "^0.6.0"
+  },
+  "devDependencies": {
+    "axios": "^1.7.7",
+    "nodemon": "^3.1.7"
+  }
+}

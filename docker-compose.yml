@@ -1,0 +1,14 @@
+version: "3.9"  # Specify the Docker Compose file version
+
+services:
+  web:
+    build: .  # Build the image from the current directory (where your Dockerfile is)
+    ports:
+      - "80:3000"  # Map port 3000 on the host to port 3000 in the container
+    environment:
+      - CLIENT_ID=9c685ff9ee77ce79edfd89d2e3ff8566
+      - CLIENT_SECRET=c33bf278c5bb57492207fc0c2abfffd2
+      - BASE_URL=https://sandbox-apis.bankofcyprus.com/df-boc-org-sb/sb/psd2/
+      - JWT_BASE_URL=https://sandbox-apis.bankofcyprus.com/df-boc-org-sb/sb/
+    volumes:
+      - ./:/app  # Mount the current directory to /app in the container (for live updates)
